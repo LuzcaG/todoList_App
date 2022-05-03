@@ -117,6 +117,8 @@ public class CadTarefaFragment extends Fragment {
             if (msg.equals("ok")){
                 Log.w("RESULTADO", "IUPIIIIIII");
                 Toast.makeText(getContext(),"salvo com sucesso!!!", Toast.LENGTH_SHORT).show();
+                //aciona o botao de voltar
+                getActivity().onBackPressed();
             }else{
                 Log.w("RESULTADO", msg);
                 Toast.makeText(getContext(),"salvo com fracasso!!!"+ msg, Toast.LENGTH_SHORT).show();

@@ -62,4 +62,9 @@ public class Tarefa {
     public void setIdtarefa(Long idtarefa) {
         this.idtarefa = idtarefa;
     }
+
+    //verifica se a tarefa esta concluida
+    public boolean isConcluida(){
+        return  dtaFinalizada != 0;
+    }
 }
