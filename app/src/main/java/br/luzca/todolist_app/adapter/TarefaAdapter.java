@@ -1,10 +1,12 @@
 package br.luzca.todolist_app.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,11 +21,13 @@ public class TarefaAdapter extends RecyclerView.Adapter<TarefaAdapter.TarefaView
 
     private List<Tarefa> tarefas;
     private Context context;
+    private OnTarefaClickListener listenerClickTarefa;
 
     //construtor para receber os valores
-    public TarefaAdapter(List<Tarefa> lista, Context contexto){
+    public TarefaAdapter(List<Tarefa> lista, Context contexto, OnTarefaClickListener listener){
         this.tarefas = lista;
         this.context = contexto;
+        this.listenerClickTarefa = listener;
     }
 
     @NonNull
@@ -48,11 +52,20 @@ public class TarefaAdapter extends RecyclerView.Adapter<TarefaAdapter.TarefaView
         }else{
             holder.tvStatus.setText("Aberta");
             holder.tvStatus.setBackgroundColor(context.getResources().getColor(R.color.yellow));
+
         }
 
         //formata a data de Long a String
         SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
         holder.tvData.setText(formatador.format(t.getDtaPrevista()));
+        holder.itemView.setOnClickListener(v ->{
+            //Log.w("BUTTON-CLICK", "CLICOU EM: "+position);
+            //dispara o listener
+            listenerClickTarefa.onclick(v, t);
+
+            //Toast.makeText(v.getContext(),"Tarefa clicado", Toast.LENGTH_SHORT).show();
+
+        });
     }
 
     @Override
@@ -75,7 +88,12 @@ public class TarefaAdapter extends RecyclerView.Adapter<TarefaAdapter.TarefaView
 
             tvTitulo = view.findViewById(R.id.tarefaNametxt);
             tvData = view.findViewById(R.id.dtaConclusaotxt);
+
             tvStatus = view.findViewById(R.id.StatusTarefatxt);
         }
+
+    }
+    public interface OnTarefaClickListener{
+        void onclick(View view, Tarefa tarefa);
     }
 }

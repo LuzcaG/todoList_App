@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/principalFragment"
         android:name="br.luzca.todolist_app.fragments.PrincipalFragment"
-        android:label="         |LiSTA DE TAREFAS"
+        android:label="LiSTA DE TAREFAS"
         tools:layout="@layout/fragment_principal" >
         <action
             android:id="@+id/action_principalFragment_to_cadTarefaFragment"
@@ -25,7 +25,7 @@
     <fragment
         android:id="@+id/detalheTarefaFragment"
         android:name="br.luzca.todolist_app.fragments.DetalheTarefaFragment"
-        android:label="fragment_detalhe_tarefa"
+        android:label="DETALHES"
         tools:layout="@layout/fragment_detalhe_tarefa" >
         <action
             android:id="@+id/action_detalheTarefaFragment_to_cadSubTarefaFragment"
@@ -34,6 +34,6 @@
     <fragment
         android:id="@+id/cadTarefaFragment"
         android:name="br.luzca.todolist_app.fragments.CadTarefaFragment"
-        android:label="|ADICIONANDO TAREFA"
+        android:label="ADICIONANDO TAREFA"
         tools:layout="@layout/fragment_cad_tarefa" />
 </navigation>

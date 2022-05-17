@@ -28,4 +28,14 @@
     <string name="dteConclusaoTarefa">--/--/--</string>
     <string name="statusTarefa">status da tarefa</string>
 
+    //strings do fragment: fragment_detalhe_tarefa
+    <string name="dataDe">Data prevista:</string>
+    <string name="tituloDe">Titulo da Tarefa:</string>
+    <string name="descDe">Descrição:</string>
+
+    //strings do fragment: fragment_cad_sub_Tarefa
+    <string name="tituloTarefa"></string>
+    <string name="textViewTitle">Sub-Tarefa:</string>
+    <string name="textEdTitle">Escreva uma sub-Tarefa desta tarefa.</string>
+
 </resources>

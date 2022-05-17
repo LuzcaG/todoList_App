@@ -3,15 +3,17 @@ package br.luzca.todolist_app.model;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity
-public class Tarefa {
+public class Tarefa implements Serializable {
     @PrimaryKey(autoGenerate = true)
-    private  Long idtarefa;
+    private  long idtarefa;
     private String titulo;
     private String descricao;
-    private Long dtacriacao;
-    private Long dtaPrevista;
-    private Long dtaFinalizada;
+    private long dtacriacao;
+    private long dtaPrevista;
+    private long dtaFinalizada;
 
 
     public String getTitulo() {
@@ -31,35 +33,35 @@ public class Tarefa {
         this.descricao = descricao;
     }
 
-    public Long getDtacriacao() {
+    public long getDtacriacao() {
         return dtacriacao;
     }
 
-    public void setDtacriacao(Long dtacriacao) {
+    public void setDtacriacao(long dtacriacao) {
         this.dtacriacao = dtacriacao;
     }
 
-    public Long getDtaPrevista() {
+    public long getDtaPrevista() {
         return dtaPrevista;
     }
 
-    public void setDtaPrevista(Long dtaPrevista) {
+    public void setDtaPrevista(long dtaPrevista) {
         this.dtaPrevista = dtaPrevista;
     }
 
-    public Long getDtaFinalizada() {
+    public long getDtaFinalizada() {
         return dtaFinalizada;
     }
 
-    public void setDtaFinalizada(Long dtaFinalizada) {
+    public void setDtaFinalizada(long dtaFinalizada) {
         this.dtaFinalizada = dtaFinalizada;
     }
 
-    public Long getIdtarefa() {
+    public long getIdtarefa() {
         return idtarefa;
     }
 
-    public void setIdtarefa(Long idtarefa) {
+    public void setIdtarefa(long idtarefa) {
         this.idtarefa = idtarefa;
     }
 

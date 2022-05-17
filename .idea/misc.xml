@@ -5,9 +5,10 @@
       <map>
         <entry key="..\:/Users/TecDevTarde/AndroidStudioProjects/todolist_App/app/src/main/res/layout/activity_main3.xml" value="0.16271442986881937" />
         <entry key="..\:/Users/TecDevTarde/AndroidStudioProjects/todolist_App/app/src/main/res/layout/adapter_tarefa.xml" value="0.33177083333333335" />
-        <entry key="..\:/Users/TecDevTarde/AndroidStudioProjects/todolist_App/app/src/main/res/layout/fragment_cad_sub_tarefa.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/TecDevTarde/AndroidStudioProjects/todolist_App/app/src/main/res/layout/fragment_cad_sub_tarefa.xml" value="0.18" />
         <entry key="..\:/Users/TecDevTarde/AndroidStudioProjects/todolist_App/app/src/main/res/layout/fragment_cad_tarefa.xml" value="0.31402439024390244" />
         <entry key="..\:/Users/TecDevTarde/AndroidStudioProjects/todolist_App/app/src/main/res/layout/fragment_cadastro_tarefa.xml" value="0.1" />
+        <entry key="..\:/Users/TecDevTarde/AndroidStudioProjects/todolist_App/app/src/main/res/layout/fragment_detalhe_tarefa.xml" value="0.33" />
         <entry key="..\:/Users/TecDevTarde/AndroidStudioProjects/todolist_App/app/src/main/res/layout/fragment_principal.xml" value="0.3359375" />
       </map>
     </option>
